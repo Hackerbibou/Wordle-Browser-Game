@@ -10,18 +10,18 @@ function onchange2(id, val){
     
         let c=id.split("-")
         let d=parseInt(c[2])
-            if(val.length==1){
+            if(val.toLowerCase().length==1){
                 document.querySelector('#box-'+(parseInt(c[1])+1)+'-'+(parseInt(c[2])+1)).removeAttribute('disabled');
                 document.querySelector('#box-'+(parseInt(c[1])+1)+'-'+(parseInt(c[2])+1)).focus();
                 
             }
-            if(val==char[parseInt(c[1])]){
+            if(val.toLowerCase()==char[parseInt(c[1])]){
                 a[d]="green"
             }
-            if(val!=char[parseInt(c[1])] && solution.includes(val)){
+            if(val.toLowerCase()!=char[parseInt(c[1])] && solution.includes(val.toLowerCase())){
                 a[d]="yellow"
             }   
-            if(val!=char[parseInt(c[1])] && !(solution.includes(val))){
+            if(val.toLowerCase()!=char[parseInt(c[1])] && !(solution.includes(val.toLowerCase()))){
                 a[d]="red"
             }
             
@@ -31,13 +31,13 @@ function onchange1(id, val){
     let c=id.split("-")
         let d=parseInt(c[2])
     
-        if(val==char[parseInt(c[1])]){
+        if(val.toLowerCase()==char[parseInt(c[1])]){
             a[d]="green"
         }
-        if(val!=char[parseInt(c[1])] && solution.includes(val)){
+        if(val.toLowerCase()!=char[parseInt(c[1])] && solution.includes(val.toLowerCase())){
             a[d]="yellow"
         }   
-        if(val!=char[parseInt(c[1])] && !(solution.includes(val))){
+        if(val.toLowerCase()!=char[parseInt(c[1])] && !(solution.includes(val.toLowerCase()))){
             a[d]="red"
         }
     
