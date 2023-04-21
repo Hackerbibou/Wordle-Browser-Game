@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="menu">Wordle <button id="restart-btn" onclick="restart()"><img class="refresh" src="images/refresh-512.webp" alt="Restart"></button></div>
+        <div>
+        <div id="row-div" class=" row-div1">
+            <input id="box-0-0" value onkeyup="onchange2(id, value)"/>
+            <input id="box-1-1" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-2" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-3" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-4" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+        <div id="row-div" class=" row-div2">
+            <input id="box-0-5" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-1-6" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-7" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-8" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-9" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+        <div id="row-div" class=" row-div3">
+            <input id="box-0-10" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-1-11" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-12" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-13" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-14" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+        <div id="row-div" class=" row-div4">
+            <input id="box-0-15" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-1-16" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-17" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-18" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-19" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+        <div id="row-div" class=" row-div5">
+            <input id="box-0-20" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-1-21" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-22" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-23" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-24" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+        <div id="row-div" class=" row-div6">
+            <input id="box-0-25" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-1-26" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-2-27" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-3-28" value onkeyup="onchange2(id, value)" disabled/>
+            <input id="box-4-29" value onkeyup="onchange1(id, value)" disabled/>
+        </div>
+    </div>
+        <div class="winningPop">
+            <h1>Congratulations</h1>
+            <p>Do you want to play again?</p>
+            <button id="restart-btn" onclick="restart()"><img class="refresh" src="images/refresh-512.webp" alt="Restart"></button>
+            
+        </div>
+        <footer id="footer">
+                Copyright @2023 Habibi
+        </footer>
+    </div>
+</body>
+</html>
