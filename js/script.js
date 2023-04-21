@@ -12,7 +12,7 @@ function onchange2(id, val){
         let d=parseInt(c[2])
             if(val.length==1){
                 document.querySelector('#box-'+(parseInt(c[1])+1)+'-'+(parseInt(c[2])+1)).removeAttribute('disabled');
-                setTimeout(document.querySelector('#box-'+(parseInt(c[1])+1)+'-'+(parseInt(c[2])+1)).focus(),1000);
+                document.querySelector('#box-'+(parseInt(c[1])+1)+'-'+(parseInt(c[2])+1)).focus();
                 
             }
             if(val==char[parseInt(c[1])]){
@@ -87,4 +87,3 @@ function  restart(){
  //   window.location.reload()
 //})
 
-console.log(document.querySelector("#box-0-0").value)
